@@ -9,60 +9,145 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
-            background-color: #f9f9f9;
+            /* Fundo amarelo mostarda elegante */
+            background-color: #d4a373;
         }
         header {
             text-align: center;
             margin-bottom: 40px;
+            border-bottom: 2px solid #b08968;
+            padding-bottom: 20px;
         }
         h1 {
-            color: #1a1a1a;
-            margin-bottom: 10px;
+            color: #2b2d42;
+            margin-bottom: 5px;
+            font-size: 2.5em;
+        }
+        header p {
+            color: #3a3b45;
+            font-size: 1.2em;
+            font-weight: 500;
+        }
+        .grid-sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
         }
         .section {
             background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
+            padding: 25px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .section h2 {
+            font-size: 1.4em;
+            color: #2b2d42;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+        .section p {
+            color: #555;
+            font-size: 0.95em;
+            flex-grow: 1;
         }
         a.button {
             display: inline-block;
-            background: #2c3e50;
+            background: #2b2d42;
             color: #fff;
-            padding: 10px 20px;
+            padding: 10px 15px;
             text-decoration: none;
             border-radius: 4px;
-            margin-top: 10px;
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background 0.2s;
         }
         a.button:hover {
-            background: #34495e;
+            background: #8d99ae;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #b08968;
+            color: #2b2d42;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        footer a {
+            color: #2b2d42;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
     <header>
         <h1>Conversa de Cordas</h1>
         <p>Música de câmara e violão</p>
     </header>
 
-    <div class="section">
-        <h2>O Duo / Projeto</h2>
-        <p>Bem-vindo ao site oficial do projeto Conversa de Cordas. Em breve, conteúdo completo com release, mapa de palco e materiais para download.</p>
+    <div class="grid-sections">
+        
+        <!-- Quem Somos -->
+        <div class="section">
+            <div>
+                <h2>Quem Somos</h2>
+                <p>Conheça a trajetória, a proposta artística e os músicos por trás do projeto Conversa de Cordas.</p>
+            </div>
+            <a href="#" class="button" target="_blank">Saiba Mais</a>
+        </div>
+
+        <!-- Arranjos -->
+        <div class="section">
+            <div>
+                <h2>Arranjos</h2>
+                <p>Acesse nosso repositório de partituras e arranjos exclusivos para violão disponíveis para download gratuito.</p>
+            </div>
+            <a href="#" class="button" target="_blank">Baixar Arranjos</a>
+        </div>
+
+        <!-- Artigos -->
+        <div class="section">
+            <div>
+                <h2>Artigos</h2>
+                <p>Textos, reflexões e estudos sobre interpretação musical, técnica violonística e repertório.</p>
+            </div>
+            <a href="#" class="button" target="_blank">Ler Artigos</a>
+        </div>
+
+        <!-- Fotos -->
+        <div class="section">
+            <div>
+                <h2>Fotos</h2>
+                <p>Galeria de imagens artísticas em alta resolução do duo para divulgação e imprensa.</p>
+            </div>
+            <a href="#" class="button" target="_blank">Ver Galeria</a>
+        </div>
+
+        <!-- Mapa de Palco -->
+        <div class="section">
+            <div>
+                <h2>Mapa de Palco</h2>
+                <p>Especificações técnicas, disposições de microfones e rider técnico para apresentações ao vivo.</p>
+            </div>
+            <a href="#" class="button" target="_blank">Baixar Mapa de Palco</a>
+        </div>
+
     </div>
 
-    <div class="section">
-        <h2>Partituras e Arranjos</h2>
-        <p>Baixe gratuitamente nossos arranjos e partituras para violão.</p>
-        <a href="#" class="button">Acessar Materiais (Google Drive)</a>
-    </div>
+    <footer>
+        <p>Contato profissional: <a href="mailto:contato@conversadecordas.mus.br">contato@conversadecordas.mus.br</a></p>
+        <p>&copy; 2026 Conversa de Cordas. Todos os direitos reservados.</p>
+    </footer>
 
-    <div class="section">
-        <h2>Contato</h2>
-        <p>Fale conosco pelo e-mail: <a href="mailto:contato@conversadecordas.mus.br">contato@conversadecordas.mus.br</a></p>
-    </div>
 </body>
 </html>
